@@ -1,0 +1,15 @@
+h1{
+    color: #F08080;
+}
+#tieu-de{
+    color: aquamarine;
+}
+.td{
+    color: cadetblue;
+}
+#menu ul li{
+    color: cornflowerblue;
+}
+#menu ul ul > p {
+    color: goldenrod;
+}

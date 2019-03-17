@@ -1,0 +1,42 @@
+.trangtri{
+    text-align: center;
+}
+.trangtri2{
+    text-align: left;
+}
+.trangtri3{
+    text-align: right;
+}
+.trangtri4{
+    text-align: justify;
+}
+.trangtri5{
+text-decoration: overline;
+}
+.trangtri6{
+text-decoration: underline;
+}
+.trangtri7{
+text-decoration: line-through;
+}
+.trangtri8{
+text-decoration: none;
+}
+.trangtri9{
+    text-indent: 100px;
+}
+.trangtri10{
+    text-shadow: blue 2px 3px 4px, red 1px 2px 3px; /* màu sắc, tọa độ x tọa độ y, độ mờ*/
+}
+.trangtri11{
+    text-transform: capitalize; /* In hoa các chữ cái đầu*/
+}
+.trangtri12{
+    text-transform: uppercase;/* In hoa toàn bộ văn bản*/
+}
+.trangtri13{
+    text-transform: lowercase ;/*in thường toàn bộ văn bản*/
+}
+.trangtri14{
+    text-transform: none;
+}

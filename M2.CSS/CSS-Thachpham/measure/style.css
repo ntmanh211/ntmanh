@@ -1,0 +1,41 @@
+#px{
+    width: 300px;
+    height: 250px;
+    background-color: #F08080;
+}
+#pt{
+    width: 300pt;
+    height: 250pt;
+    background-color: goldenrod;
+}
+#box {
+    width: 500px;
+    height: 400px;
+    background-color: #F08080;
+}
+#child {
+    width: 50%;
+    height: 40%;
+    background-color: cadetblue;
+}
+#box1{
+    font-size: 16px;
+    background-color: cornflowerblue;
+}
+#child1{
+    width: 4em;
+    height: 4em;
+    background-color: gold;
+}
+body{
+    font-size: 20px;
+}
+#box2{
+    font-size: 16px;
+    background-color: coral;
+}
+#child2{
+    width: 4rem;
+    height: 4rem;
+    background-color: darkseagreen;
+}
