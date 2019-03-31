@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .container{
+            background: #F08080;
+            overflow: hidden;
+        }
+        img{
+            max-width: 250px;
+        }
+        .col1{
+            float: left;
+        }
+        .col2{
+            width: 500px;
+            float: left;
+            text-align: justify;
+            clear: both;
+        }
+        .col3{
+            float: left;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+<h1>CSS Clear</h1>
+<p> Thuộc tính clear sẽ xử lý khi mà thẻ trên nó bị float left hoặc right</p>
+<p>Bình thường khi tehr A ở trước thẻ B nếu thẻ a float left thì nó sẽ kéo thẻ B trôi sang bên trái</p>
+<p>nếu thẻ A ở trước thẻ B nếu thẻ a float right thì thẻ A trôi sang phải</p>
+<p>Để thẻ B không chịu ảnh hưởng của thẻ A ta sẻ dụng thuộc tính clear</p>
+<p>Nếu thẻ A(float left) thì để thẻ B Clear left</p>
+<p>Nếu thẻ A(float right) thì để thẻ B Clear right</p>
+<p>Nếu không muốn thẻ B trôi theo trái hay phải thì ta đặt CSS cho thẻ B là clear: both
+có nghĩa là không chiu janhr hưởng trôi snag trái hay phải</p>
+<p>Có thể hiểu thẻ clear ngược lại với thẻ float, nó tránh ảnh hưởng từ thuộc tính float bên trên</p>
+<div class="container">
+    <div class="col1">
+        <img src="cat.jpg">
+    </div>
+    <div class="col2">
+        Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
+        nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit
+        in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis
+        at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
+        delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis
+        eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
+        Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.
+    </div>
+    <div class="col3">
+        <img src="dog.jpg">
+    </div>
+</div>
+</body>
+</html>

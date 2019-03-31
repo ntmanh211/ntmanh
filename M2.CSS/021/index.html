@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .container{
+            background: #F08080;
+            overflow: hidden;
+        }
+        img{
+            max-width: 250px;
+        }
+        .col1{
+            float: right;
+        }
+        .col2{
+            width: 200px;
+            float: right;
+            text-align: justify;
+        }
+        .col3{
+            float: left;
+        }
+    </style>
+</head>
+<body>
+<h1>CSS Float And Clear</h1>
+<p>Khi 1 thẻ được float (trôi) sang trái hay sang phải thì bản thân thẻ đó cũng trôi sáng trái hoặc phải</p>
+<p>đồng thời kéo các thẻ bên dưới trôi sang trái hay phải lấp vào khoảng trống đang có</p>
+<p>Nếu 1 thẻ mà cao hơn cái thẻ chứa nó đồng thời thẻ con được float thì thẻ con trượt khỏi thẻ bao nó</p>
+<p>Có nhiều cách để fix vấn đề này</p>
+<p>Cách 1: Đặt thẻ mẹ có thuộc tính overflow:hidden</p>
+<div class="container">
+    <div class="col1">
+        <img src="cat.jpg">
+    </div>
+    <div class="col2">
+        Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
+        nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit
+        in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis
+        at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
+        delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis
+        eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
+        Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.
+    </div>
+    <div class="col3">
+        <img src="dog.jpg">
+    </div>
+</div>
+</body>
+</html>
