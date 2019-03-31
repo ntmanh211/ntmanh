@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="clearfix.css">
+    <style type="text/css">
+        .container{
+            background: #F08080;
+        }
+        img{
+            max-width: 250px;
+        }
+        .col1{
+            float: right;
+        }
+        .col2{
+            width: 200px;
+            float: right;
+            text-align: justify;
+        }
+        .col3{
+            float: left;
+        }
+    </style>
+</head>
+<body>
+<h1>CSS Clear Fix</h1>
+<p>Khi nào sử dụng kỹ thuật Clearfix?</p>
+<p>Khi thẻ mẹ chứa thẻ con mà thẻ con có chiều cao lớn hơn thẻ mẹ
+đồng thời thẻ con bị float:left hay float:right</p>
+<p>=>Xảy ra thẻ con bị trượt khỏi thẻ mẹ: nói cách khác thẻ mẹ không chứa thẻ con</p>
+<p>Để fix có 3 cách phổ biến:</p>
+<ul>
+    <li>Cách 1: Cho thẻ mẹ thuộc tính overflow:hidden: Cách nayd có nhược điểm là nếu thẻ bên trong
+    có nội dung lớn hơn thẻ mẹ thì nội dung cần hiển thị sẽ bị ẩn đi do thuộc tính overflow:hidden</li>
+    <li>Cách 2:để 1 thẻ con rỗng ví dụ như thẻ div hoặc thẻ p không có nội dung sau đó đặt thuộc
+    tính cho thẻ này là clear:both. Nhược điểm của cách này là tạo ra 1 thẻ rỗng</li>
+    <li>Cách 3: Sử dụng kỹ thuật clearfix: thêm class clear fix cho thẻ mẹ để thẻ mẹ chứa được
+    thẻ con khi thẻ con float. Cách này tránh được nhược điểm của cách 1 và cách 2 </li>
+</ul>
+<div class="container clearfix">
+    <div class="col1">
+        <img src="cat.jpg">
+    </div>
+    <div class="col2">
+        Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
+        nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit
+        in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis
+        at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
+        delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis
+        eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
+        Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.
+    </div>
+    <div class="col3">
+        <img src="dog.jpg">
+    </div>
+</div>
+</body>
+</html>
