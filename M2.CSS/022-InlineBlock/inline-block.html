@@ -3,10 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style type="text/css">
+        a, img, span{
+            background: #F08080;
+           padding: 10px;
+            display: inline-block;
+            height: 500px;
+            width: 150px;
+        }
+        div{
+            background: steelblue;
+            height: 200px;
+            width: 200px;
+            margin-top: 30px;
+            display: inline-block;
+        }
+    </style>
 </head>
 <body>
 <h1>CSS display:inline-block</h1>
 <p>Khi nào sử dụng Inline-Block?</p>
-<p>Trường hợp 1: Khi muốn đặt thuộc tính height, width có tác dụng trên các thẻ</p>
+<p>Trường hợp 1: Khi muốn đặt thuộc tính height, width có tác dụng trên các thẻ có kiểu hiển thị
+mặc định là inline như a hay span thì ta sử dụng thuộc tính display:inline-block;</p>
+<p> Các thẻ a hay span có thuộc tính display:inline-block vẫn hiển thị trên cùng 1 hàng như
+inline nhưng có thể đặt thuộc tính width, height như các thẻ block</p>
+<p>Trường hợp 2: là mình các thẻ block đứng trên cùng 1 hàng</p>
+<a href="#">Thế giới</a>
+<a href="#">Quân sự</a>
+<a href="#">Văn hóa</a>
+<img src="dog.jpg">
+<img src="dog.jpg">
+<img src="dog.jpg">
+<span>Span 1</span>
+<span>Span 2</span>
+<span>Span 3</span>
+<div>DIV 1</div>
+<div>DIV 2</div>
+<div>DIV 3</div>
 </body>
 </html>
