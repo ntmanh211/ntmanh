@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        #parent1{
+            background: #F08080;
+            padding: 10px;
+            color: whitesmoke;
+        }
+        #parent1 ~ p{
+            background: steelblue;
+            color: whitesmoke;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+<h1>Selector kết hợp</h1>
+<h1>1- Selector1 ~ Selector2</h1>
+<p>Selector2 là anh chị em nằm cùng cấp cửa selector1</p>
+<div id="parent1">
+    <div class="row1">
+        <p>Đoạn văn</p>
+    </div>
+    <p>Đoạn văn</p>
+</div>
+<p>Đoạn văn ngoài thẻ #parent1</p>
+</body>
+</html>

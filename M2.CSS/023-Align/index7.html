@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="normalize.css">
+    <style type="text/css">
+        .clearfix {
+            overflow: auto;
+        }
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        #parent3, #parent2, #parent1{
+            background: #F08080;
+            margin: 50px auto;
+            width: 800px;
+        }
+        #child3, #child1, #child2{
+            background: steelblue;
+            width: 50%;
+        }
+        #child1{
+            float: left;
+        }
+        #child2{
+            margin: 0 auto ;
+        }
+        #child3{
+            float: right;
+        }
+    </style>
+</head>
+<body>
+<h1>Căn trái, phải, giữa khi 1 thẻ Block nằm trong 1 thẻ Block khác</h1>
+<p>Căn trái, phải, giữa theo thẻ mẹ</p>
+<p>Sử dụng kỹ thuật Float và Clear trong CSS</p>
+<p>Khi thẻ con float sẽ bị trượt khỏi thẻ mẹ nên phải sử dụng clearfix khắc phục</p>
+<div id="parent1" class="clearfix">
+    <div id="child1">
+        Căn trái
+        <img src="dog.jpg">
+    </div>
+</div>
+<div id="parent2" class="clearfix">
+    <div id="child2">
+        Căn giữa
+        <img src="dog.jpg">
+    </div>
+</div>
+<div id="parent3" class="clearfix">
+    <div id="child3">
+        Căn phải
+        <img src="dog.jpg">
+    </div>
+</div>
+</body>
+</html>

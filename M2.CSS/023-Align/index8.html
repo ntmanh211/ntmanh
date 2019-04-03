@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="normalize.css">
+    <style type="text/css">
+        #parent1{
+            background: #F08080;
+            color: whitesmoke;
+            padding: 30px 0;
+            margin: 50px 0;
+            text-align: center;
+            width: 700px;
+        }
+        #parent2{
+            background: steelblue;
+            color: whitesmoke;
+            width: 700px;
+            margin: 50px 0;
+            padding: 30px 0;
+            text-align: center;
+            height: 200px;
+            line-height: 200px;
+        }
+    </style>
+</head>
+<body>
+<h1>Căn giữa văn bản theo chiều dọc</h1>
+<p>VD1 căn giữa văn bản trong 1 thẻ block với chiều cao không xác định
+=> đặt padding top=padding bottom áp dụng văn bản nhiều dòng</p>
+<p>VD2 căn giữa văn bane trong 1 thẻ Block có height xác định
+và văn bản chỉ có 1 dòng duy nhất thì mình đặt height=line-height</p>
+<div id="parent1">
+    Căn giữa văn bản theo chiều dọc<br>
+    Căn giữa văn bản theo chiều dọc<br>
+    Căn giữa văn bản theo chiều dọc
+</div>
+<div id="parent2">
+    Căn giữa văn bản theo chiều dọc<br>
+</div>
+</body>
+</html>
