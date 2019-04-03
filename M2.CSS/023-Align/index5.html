@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="normalize.css">
+    <style type="text/css">
+        img{
+            width: 150px;
+            height: 150px;
+        }
+        #parent1,#parent2,#parent3{
+            background: #F08080;
+            width: 700px;
+            margin: 30px;
+            font-size: 30px;
+            color: whitesmoke;
+            position: relative;
+            height: 200px;
+        }
+        #child1, #child2, #child3{
+            background: steelblue;
+            width: 50%;
+            top: 20px;
+        }
+        #child1{
+            position: absolute;
+            left: 0;
+        }
+        #child2{
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%,0);
+        }
+        #child3{
+            position: absolute;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+<h1>Căn trái, phải, giữa khi 1 thẻ Block nằm trong 1 thẻ Block khác</h1>
+<p>Căn trái , phải, giữa theo thẻ mẹ</p>
+<p>1- Cần đặt position cho thẻ mẹ là relative</p>
+<p>2- Cần đặt position cho thẻ con là absolute và đựt các thuộc tính CSS vị trí như top,
+bottom, left, right theo nhu cầu thực tế</p>
+<div id="parent1">
+    <div id="child1">
+        Căn trái
+        <img src="dog.jpg">
+    </div>
+</div>
+<div id="parent2">
+    <div id="child2">
+        Căn giữa
+        <img src="dog.jpg">
+    </div>
+</div><div id="parent3">
+    <div id="child3">
+        Căn phải
+        <img src="dog.jpg">
+    </div>
+</div>
+</body>
+</html>
