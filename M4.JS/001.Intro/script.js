@@ -1,0 +1,1 @@
+alert("Nhúng js vào file")

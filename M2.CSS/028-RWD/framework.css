@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+}
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+/*CSS for mobile*/
+[class*="col-"]{
+    float: left;
+    padding: 15px;
+    width: 100%;
+}
+@media screen and (min-width: 600px) {
+    /*CSS for ipad*/
+    .col-sm1{width: 8.33%;}
+    .col-sm2{width: 16.66%;}
+    .col-sm3{width: 25%}
+    .col-sm4{width: 33.33%}
+    .col-sm5{width: 41.66%}
+    .col-sm6{width: 50%}
+    .col-sm7{width: 58.33%}
+    .col-sm8{width: 66.66%}
+    .col-sm9{width: 75%}
+    .col-sm10{width: 83.33%}
+    .col-sm11{width: 91.67%}
+    .col-sm12{width: 100%}
+    @media screen and (min-width: 768px){
+        /*CSS FOR PC*/
+        .col-sm1{width: 8.33%;}
+        .col-sm2{width: 16.66%;}
+        .col-sm3{width: 25%}
+        .col-sm4{width: 33.33%}
+        .col-sm5{width: 41.66%}
+        .col-sm6{width: 50%}
+        .col-sm7{width: 58.33%}
+        .col-sm8{width: 66.66%}
+        .col-sm9{width: 75%}
+        .col-sm10{width: 83.33%}
+        .col-sm11{width: 91.67%}
+        .col-sm12{width: 100%}
+    }
+}

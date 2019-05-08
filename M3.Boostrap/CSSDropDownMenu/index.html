@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style type="text/css">
+        ul{
+            margin: 0px;
+            padding: 0px;
+            background: darkseagreen;
+            overflow: hidden;
+        }
+        li{
+            float: left;
+        }
+        li a, .menu{
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            text-decoration: none;
+        }
+        li .menus{
+            display: inline-block;
+        }
+        .menu-content{
+            background: white;
+            display: none;
+            position: absolute;
+            min-width: 50px;
+            box-shadow: 0px 8px 16px 0px floralwhite;
+            z-index: 1;
+        }
+        .menu-content a{
+            color: palevioletred;
+            padding: 20px;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li><a href="#home">Home</a></li>
+    <li class="menu">
+        <a href="" class="menus">Menus</a>
+        <div class="menu-content">
+            <a href="">Menu 1</a>
+            <a href="">Menu 2</a>
+        </div>
+    </li>
+    <li><a href="#settings">Settings</a></li>
+    <li><a href="#contact">Contact</a></li>
+</ul>
+</body>
+</html>

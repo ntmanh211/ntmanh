@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="normalize.css">
+    <style type="text/css" >
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-size: 16px;
+        }
+        .container{
+            width: 900px;
+            height: 200px;
+            margin: 20px;
+            padding: 10px;
+        }
+        .row{
+            height: 100px;
+            background: #0f6674;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        nav{
+            background: #abdde5;
+            color: white;
+        }
+        nav ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            background: black;
+        }
+        nav > ul{
+            display: block;
+        }
+        nav > ul > li{
+            float: left;
+            padding: 20px;
+        }
+        nav ul li a{
+            color: white;
+            text-decoration: none;
+        }
+        nav ul li a:hover{
+            color: #abdde5;
+        }
+        nav > ul ul{
+            display: none;
+        }
+        nav ul li{
+            position: relative;
+            background: black;
+            padding: 10px;
+            height: 50px;
+            width: 100px;
+        }
+        nav ul li:hover > ul{
+            display: block;
+        }
+        nav ul li ul{
+            position: absolute;
+        }
+        nav > ul >li >ul{
+            top: 50px;
+            left: 0px;
+        }
+        nav > ul >li >ul li ul{
+            top: 0px;
+            left: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <nav>
+            <ul>
+                <li><a href="">Homes</a></li>
+                <li>
+                    <a href="">Content</a>
+                    <ul>
+                        <li><a href="">Content 1</a>
+                            <ul>
+                                <li><a href="">Content 1.1</a> </li>
+                                <li><a href="">Content 1.2</a> </li>
+                            </ul>
+                        </li>
+                        <li><a href="">Content 2</a> </li>
+                    </ul>
+                </li>
+                <li><a href="">Settings</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+</body>
+</html>

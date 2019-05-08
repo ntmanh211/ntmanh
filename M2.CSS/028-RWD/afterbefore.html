@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="normalize.css">
+    <style type="text/css">
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            overflow: auto;
+        }
+        .row{
+            overflow: auto;
+            background: #F08080;
+            padding: 30px 0;
+        }
+        .row::before{
+            content: "BEFORE INNER CONTENT";
+            background: darkseagreen;
+            clear: both;
+            display: block;
+        }
+        .row::after{
+            content: "AFTER INNER CONTENT";
+            background: steelblue;
+            clear: both;
+            display: block;
+        }
+        .col{
+            min-height: 300px;
+            padding: 30px;
+        }
+        .col-1{
+            width: 33%;
+            background: lightpink;
+            color: whitesmoke;
+            float: left;
+        }
+        .col-2{
+            width: 67%;
+            background: powderblue;
+            color: whitesmoke;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+        <div class="col col-1">Column 1</div>
+        <div class="col col-2">Column 2</div>
+        </div>
+    </div>
+</body>
+</html>
