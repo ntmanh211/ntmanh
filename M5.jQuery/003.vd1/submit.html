@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Sự kiện Submit Form</h2>
+<form name="register" method="post" action="">
+    <input id="user" type="text" name="user" value="">
+    <input type="submit" name="submit" value="Submit">
+</form>
+<p></p>
+<script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("form[name='register']").submit(function () {
+            var text = $("input#user").val();
+            if(text ==''){
+                alert("Bạn chưa nhập tên User");
+                //không cho form submit
+                return false;
+            }
+            else {
+                alert("Nhập tên thành công");
+            }
+        })
+
+
+    })
+</script>
+</body>
+</html>

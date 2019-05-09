@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Các sự kiện di chuột mouseenter (di chuột vào) và mouseleave(di chuột ra)</h2>
+<div class="container" style="padding: 20px; background: #F08080; margin: 20px">
+    CSS Selector là bộ chọn CSS để chọn các thẻ html momh muốn
+    Ví dụ: .class, #id, tag_name(div, body, p,...)
+    Jquery selector là bộ chọn của jquery để chọn các thẻ html mà các bạn mong muốn
+</div>
+<div class="container" style="padding: 20px; background: #F08080; margin: 20px">
+    CSS Selector là bộ chọn CSS để chọn các thẻ html momh muốn
+    Ví dụ: .class, #id, tag_name(div, body, p,...)
+    Jquery selector là bộ chọn của jquery để chọn các thẻ html mà các bạn mong muốn
+</div>
+<div class="container" style="padding: 20px; background: #F08080; margin: 20px">
+    CSS Selector là bộ chọn CSS để chọn các thẻ html momh muốn
+    Ví dụ: .class, #id, tag_name(div, body, p,...)
+    Jquery selector là bộ chọn của jquery để chọn các thẻ html mà các bạn mong muốn
+</div>
+<script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        //di chuột vào
+        //bên trong mouseenter là 1 callback
+        $(".container").mouseenter(function () {
+            //.container là tất cả các thẻ trong container đều bị chịu tác động
+            $(".container").css("background","green");
+        });
+        //di chuột ra
+        $(".container").mouseleave(function () {
+            $(".container").css("background","#F08080")
+        })
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>jQuery Selector là gì?</h2>
+<p>CSS Selector là bộ chọn CSS để chon các thẻ html mà các bạn mong muốn
+ví dụ: .class. #id, tag_name,...</p>
+<p>jQuery Selector là bộ chọn của jQuery để chọn các thẻ html mà các bạn mong muốn</p>
+<pre style="font-size: 22px; color: #0f6674">
+    CSS     ==>      jQuery
+    .class  ==>   $(".class")
+    #id     ==>   $("#id")
+    tag_name(div) ==> $("tag_name") $("div")
+    .classA .classB ==> $(".classA.classB")
+    .classA >.classB ==> $(".classA >.classB")
+    Chú ý tất cả select tên class, tên id, tên thẻ đền phải nằm trong "" hoặc ''
+    nhưng riêng document và window không cần "" hay ''
+    $(document).ready() là gì?
+        $() là cú pháp của jQuery Selector
+        document là đại diện của toàn trang html
+        ready có nghĩa là khi mà trang web đã được tải xong
+        và chúng ta sẽ viết các lện jQuery hoạc JS ở trong method ready
+        để đảm bảo JS được chạy sau khi trang web đã được tải xuống.
+
+
+    Trong document ready sẽ có 1 function của JS nhưng mà không có tên
+    và nó đóng vai trò là callback. Callback là hàm mà sẽ được chạy sau
+    khi 1 sự kiện hoặc là hiệu ứng đã được xảy ra
+    Ví dụ: sau khi các bạn nhắn tin hay gọi điện thì nhà mạng sẽ tiến
+    hành trừ tiền trong tài khoản. Hành động trừ tiền sẽ diễn ra sau 1
+    cuộc gọi và nó là callback của cuộc gọi hay tin nhắn đó.
+
+    funtion(){
+    //code thực thi bên trong callback
+    }
+</pre>
+<script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+</script>
+<script type="text/javascript">
+    $document.ready(function () {
+        alert("trang đã được tải xong");
+    });
+</script>
+</body>
+</html>
