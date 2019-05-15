@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<pre>
+    Vòng lặp là quá trình lặp đi lặp lại có bước bắt đầu và kết thúc
+    và có sự thay đổi sau mỗi vòng lặp
+    1- for
+    2- while
+    3- do while
+    Cú pháp vòng lặp for:
+    for(bước khởi đầu; điều kiện vòng lặp; sự thay đổi sau mỗi vòng lặp){
+        //code thực thi trong vòng lặp
+    }
+    Cú pháp vòng lặp while:
+    bước khởi đầu
+    while(điều kiện vòng lặp chạy){
+        // code thực thi vòng lặp
+        sự thay đổi sau mỗi vòng lặp
+    }
+    Cú pháp vòng lặp do ... while
+    bước khởi đầu của vòng lặp
+    do{
+        //code thực thi vòng lặp
+        sự thay đổi sau mỗi vòng lặp, nên đặt ở cuối do
+    }
+    while(ddieuf kiện vòng lặp chạy)
+
+    ** Sự khác biệt giữa while và do..while
+        nếu điều kiện đúng thì cả 2 vòng lặp đều chạy
+        nếu điều kiện sai thì do..while vẫn chạy lần đầu tiên còn while thì điều kiện đúng mới chạy
+        do..while sec luôn chạy lần đầu tiên bất kể điều kiện đúng hay sai
+
+</pre>
+<script type="text/javascript">
+    var i = 0;
+    do {
+        console.log(i);
+        i += 2;
+    }
+    while (i < 10);
+    console.log("--------------");
+    var i = 0;
+    do {
+        if(i%2 == 0)
+        {
+            console.log(i);
+        }
+        i++;
+    }
+    while (i < 10);
+    console.log("--------------");
+    var student = ["A", "B", "C"];
+    var i = 0;
+    do {
+        console.log(student[i]);
+        i++;
+    }
+    while (i < student.length);
+</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Thao tác jQuery trên cây DOM</h2>
+<div class="container">
+    <nav>
+        <ul>
+            <li><a href="">Trang chủ</a> </li>
+            <li><a href="">Tin tức</a> </li>
+            <li><a href="">Giới thiệu</a> </li>
+            <li><a href="">Liên hệ</a> </li>
+            <li><a href="">Sản phẩm</a> </li>
+        </ul>
+    </nav>
+</div>
+<div style="margin-top: 30px">
+    <button id="control">Tìm children()</button>
+</div>
+<pre style="padding: 20px">
+    Các phương thức tìm hậu duệ:
+    children(): trả về hết tất cả các thẻ nàm bên trong là con trực tiếp của selector
+    filter cho children(filter) chọn ra con trực tiếp của selector phù hợp filter được
+    truyền vào
+</pre>
+<script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#control").on("click", function () {
+            $("ul").children(".intro").css("border", "1px solid white").css("background", "#F08080").css("padding","20px");
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Các kiểu định dạng thời gian trong js</h1>
+<p id="p1"></p>
+<p id="p2"></p>
+<p id="p3"></p>
+<p id="p4"></p>
+<pre>
+    1- ISO Date: "2015 - 09 - 30": kiểu chuẩn quốc tế
+    2- Short Date: "09/30/2015" kiểu thời gian ngắn
+    3- Long Date: "Sep 30 2015" kiểu thời gian dài
+</pre>
+<script type="text/javascript">
+    // khi truyền định dạng thời gian thì mình sẽ truyền theo
+    //đúng số thứ tự trong tháng
+    //lấy ra mới đánh số từ 0=>11
+    var  d= new Date("2019 - 05 - 12");
+    console.log(d.getMonth());
+    document.getElementById("p1").innerText = d;
+    var d1= new Date("05/12/2019");
+    document.getElementById("p2").innerText = d1;
+    var d2= new Date("May 12 2019");
+    document.getElementById("p3").innerText =d2;
+    var d3= new Date("12 May 2019");
+    document.getElementById("p4").innerText = d3;
+</script>
+</body>
+</html>
